@@ -1,0 +1,39 @@
+1. import project in to eclipse/STS
+
+2. run the project
+
+3. on application bootstarp springboot populates the data in to H2 tables- refer src/main/resoutce/data.sql file
+in source code
+
+4. Access get Employees by project code API - Invoke API from rest client
+
+	GET : http://localhost:8080/employee/P1001
+	
+	sample output :
+
+		[
+	    {
+	        "empId": 101,
+	        "empcode": "E10001"
+	    },
+	    {
+	        "empId": 102,
+	        "empcode": "E10002"
+	    }
+		]
+	
+2. Disassociate employee from Project
+
+	POST : http://localhost:8080/employee
+	
+	Content-Type : application/json
+	
+	Request payload:
+	{
+		"empCode":"E10001",
+		"projectCode":"P1002"
+	}
+
+ sample output - boolean type
+    true(for successful operation)
+    false(or failed operation)

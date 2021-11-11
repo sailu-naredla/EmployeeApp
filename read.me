@@ -5,7 +5,11 @@
 3. on application bootstarp springboot populates the data in to H2 tables- refer src/main/resoutce/data.sql file
 in source code
 
-4. Access get Employees by project code API - Invoke API from rest client
+4. access H2 console http://localhost:8080/h2-console
+
+NOTE : no password required and click on connect
+
+5. Access get Employees by project code API - Invoke API from rest client
 
 	GET : http://localhost:8080/employee/P1001
 	
@@ -22,7 +26,7 @@ in source code
 	    }
 		]
 	
-2. Disassociate employee from Project
+6. Disassociate employee from Project
 
 	POST : http://localhost:8080/employee
 	
@@ -37,3 +41,7 @@ in source code
  sample output - boolean type
     true(for successful operation)
     false(or failed operation)
+    
+7.  validate data in h2 console
+
+SELECT * FROM EMP_PROJ_MAPPING 

@@ -1,10 +1,10 @@
-package com.javatpoint;
+package com.employee;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringBootH2DatabaseExampleApplicationTests {
+class EmployeeApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -11,24 +11,26 @@ NOTE : no password required and click on connect
 
 5. Access get Employees by project code API - Invoke API from rest client
 
-	GET : http://localhost:8080/employee/P1001
+	GET : http://localhost:8080/api/v1/employee/P1001
 	
 	sample output :
 
-		[
-	    {
-	        "empId": 101,
-	        "empcode": "E10001"
-	    },
-	    {
-	        "empId": 102,
-	        "empcode": "E10002"
-	    }
-		]
+	{
+     "list": [
+        {
+            "empId": 101,
+            "empcode": "E10001"
+        },
+        {
+            "empId": 102,
+            "empcode": "E10002"
+        }
+      ]
+	}
 	
 6. Disassociate employee from Project
 
-	POST : http://localhost:8080/employee
+	POST : http://localhost:8080/api/v1/employee
 	
 	Content-Type : application/json
 	
@@ -42,6 +44,6 @@ NOTE : no password required and click on connect
     true(for successful operation)
     false(or failed operation)
     
-7.  validate data in h2 console
+7.  validate data in h2 console using below query
 
 SELECT * FROM EMP_PROJ_MAPPING 

@@ -1,9 +1,10 @@
 package com.employee;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.runner.RunWith;
+import org.mockito.runners.MockitoJUnitRunner;
 
-@SpringBootTest
+@RunWith(MockitoJUnitRunner.class)
 class EmployeeApplicationTests {
 
 	@Test

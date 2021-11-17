@@ -3,30 +3,22 @@
  */
 package com.employee.dto;
 
+import java.util.List;
+
 /**
  * @author snaredl
  *
  */
 public class EmployeeResponse {
 	
-	private int empId;
-	
-	private String empcode ;
+	List<EmployeeVo> list;
 
-	public int getEmpId() {
-		return empId;
+	public List<EmployeeVo> getList() {
+		return list;
 	}
 
-	public void setEmpId(int empId) {
-		this.empId = empId;
-	}
-
-	public String getEmpcode() {
-		return empcode;
-	}
-
-	public void setEmpcode(String empcode) {
-		this.empcode = empcode;
+	public void setList(List<EmployeeVo> list) {
+		this.list = list;
 	}
 	
 }
